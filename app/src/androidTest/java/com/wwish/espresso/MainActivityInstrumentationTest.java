@@ -33,8 +33,9 @@ public class MainActivityInstrumentationTest {
         //获得View,* 文本内容输入,收起软键盘
         onView(withId(R.id.editText)).perform(typeText(STRING_TO_BE_TYPED), closeSoftKeyboard()); //line 1
 
+        //获得View,执行点击操作
         onView(withText("Say hello!")).perform(click()); //line 2
-//        onView(withText("Say hello!")).perform(click()); //line 2
+
 
         String expectedText = "Hello, " + STRING_TO_BE_TYPED + "!";
         //检验View的文本内容
