@@ -51,11 +51,15 @@ import static org.junit.Assert.assertThat;
  * in a timely manner.
  */
 @MediumTest
-@RunWith(AndroidJUnit4.class)
+@RunWith(AndroidJUnit4.class)//设置测试运行环境
 public class LocalServiceTest {
+    //ServiceTestRule类是一个JUnit 4 规则它在你的单元测试方法运行之前启动你的Service，
+    // 在测试完成的时候关闭Service。通过使用这个测试规则，你可以确保在你的测试方法运行之前你的Service的连接总是建立的。
+    //注意：ServiceTestRule 类不支持测试IntentService对象。如果你需要测试IntentService对象，
+    // 你应该在一个独立的类中加入逻辑同时创建一个相匹配的单元测试。
     @Rule
     public final ServiceTestRule mServiceRule = new ServiceTestRule();
-
+    //成功绑定到了本地service并且service的返回值正确
     @Test
     public void testWithBoundService() throws TimeoutException {
         // Create the service Intent.
