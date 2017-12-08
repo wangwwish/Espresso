@@ -41,3 +41,6 @@ onView(...).check(matches(withText("Hello!")));
 * 检验View的显示状态
 
 onView(...).check(matches(isDisplayed()));
+
+https://developer.android.com/training/testing/espresso/index.html#packages
+https://developer.android.google.cn/reference/android/support/test/rule/ActivityTestRule.html#runOnUiThread(java.lang.Runnable)
