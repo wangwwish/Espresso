@@ -46,3 +46,5 @@ https://developer.android.com/training/testing/espresso/index.html#packages
 https://developer.android.google.cn/reference/android/support/test/rule/ActivityTestRule.html#runOnUiThread(java.lang.Runnable)
 
 https://github.com/googlesamples/android-testing
+
+https://developer.android.com/studio/test/espresso-test-recorder.html
