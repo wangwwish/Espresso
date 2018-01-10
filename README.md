@@ -48,3 +48,4 @@ https://developer.android.google.cn/reference/android/support/test/rule/Activity
 https://github.com/googlesamples/android-testing
 
 https://developer.android.com/studio/test/espresso-test-recorder.html
+https://codelabs.developers.google.com/codelabs/android-testing/index.html?index=../../index#0
